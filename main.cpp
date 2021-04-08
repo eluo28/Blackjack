@@ -10,15 +10,15 @@ int main() {
 
 	std::cout << "Welcome to my Casino!\n\n";
 
-	std::cout << "What is your name?\n";
+	std::cout << "What is your name?\n\n";
 	std::cin >> name;
 
-	std::cout << "Hello " << name<<"!\n";
+	std::cout << "\nHello " << name<<"!\n\n";
 
 	while (again) {
-		std::cout << "Which game would you like to play?\nb for Blackjack\nq to quit\n";
+		std::cout << "Which game would you like to play?\n\nb for Blackjack\nq to quit\n\n";
 		std::cin >> gameChoice;
-
+		std::cout << "\n";
 		switch (gameChoice) {
 		case 'b':
 			blackjack.Play();
@@ -27,7 +27,7 @@ int main() {
 			again = false;
 			break;
 		default:
-			std::cout << "That's not a valid choice!";
+			std::cout << "That's not a valid choice!\n\n";
 		}
 	}
 

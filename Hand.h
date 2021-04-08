@@ -8,9 +8,11 @@ class Hand
 
 public:
 	Hand();
+	~Hand();
 	void AddCard(Card* card);
+	void FlipFirstCard();
 	void Clear();
 protected:
-	std::vector<Card*> m_cards;
+	std::vector<Card*> m_hand;
 };
 

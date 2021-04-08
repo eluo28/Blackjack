@@ -13,7 +13,7 @@ public:
 	Card(rank rank, suit suit, bool faceUp);
 
 	int GetValue() const;
-
+	void PrintCard();
 	void Flip();
 
 private:

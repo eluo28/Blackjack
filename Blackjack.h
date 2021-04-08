@@ -12,5 +12,6 @@ public:
 private:
     int GetHandValue(Hand targetHand);
     void Introduction();
+    void Round();
 };
 

@@ -1,19 +1,17 @@
 #pragma once
 
-
+#include "Hand.h"
 #include <string>
 
 class Player
 {
 
 public:
-	Player(const std::string& name);
+	Player();
 	bool isHitting() const;
 	void Win() const;
 	void Lose() const;
-	void Hit() const;
-	void Bust() const;
-protected:
-	std::string m_name;
+	Hand m_playerHand;
+
 };
 
