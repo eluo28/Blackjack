@@ -95,6 +95,12 @@ std::ostream& operator<<(std::ostream& os, const Card::suit& suit) {
 }
 
 void Card::PrintCard() {
-	std::cout << m_rank << "\t" << m_suit << "\t" << m_faceUp << "\t";
+	
+	//std::cout << m_rank << "\t" << m_suit << "\t" << m_faceUp << "\t";
+	if (m_faceUp) {
+		std::cout << m_rank << " of " << m_suit << "\n";
+
+	}
+
 }
 

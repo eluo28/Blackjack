@@ -6,6 +6,8 @@ Blackjack::Blackjack() {
 }
 
 int Blackjack::GetHandValue(Hand targetHand) {
+	
+
 	return 10;
 }
 
@@ -47,6 +49,15 @@ void Blackjack::Round() {
 
 
 	//show hands
+	std::cout << "House hand:\n";
+
+	house.m_playerHand.PrintHand();
+	std::cout << "Total: "<< GetHandValue(house.m_playerHand) <<"\n\n";
+
+
+	std::cout << "\nPlayer hand:\n";
+	player.m_playerHand.PrintHand();
+	std::cout << "Total: " << GetHandValue(player.m_playerHand) << "\n\n";
 
 
 

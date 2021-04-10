@@ -30,3 +30,11 @@ void Hand::Clear()
 void Hand::FlipFirstCard() {
 	m_hand.front()->Flip();
 }
+
+void Hand::PrintHand() {
+	for (std::vector<Card*>::iterator it = m_hand.begin(); it != m_hand.end(); ++it) {
+		(*it)->PrintCard();
+	
+	}
+	std::cout << "\n";
+}
