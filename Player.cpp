@@ -11,12 +11,8 @@ bool Player::isHitting() const {
     std::cout << "Do you want a hit? (Y/N): ";
     
     std::cin >> response;
+    std::cout << "\n";
+    std::cout << "\n";
     return (response == 'y' || response == 'Y');
-}
-void Player::Win() const {
-    std::cout << "You won!\n";
-}
-void Player::Lose() const {
-    std::cout << "You lost.\n";
 }
 

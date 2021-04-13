@@ -13,7 +13,6 @@ public:
 	void FlipFirstCard();
 	void PrintHand();
 	void Clear();
-protected:
 	std::vector<Card*> m_hand;
 };
 

@@ -10,7 +10,7 @@ public:
 
 	enum suit { CLUBS, DIAMONDS, HEARTS, SPADES };
 
-	Card(rank rank, suit suit, bool faceUp);
+	Card(rank rank = ACE, suit suit = SPADES, bool faceUp = true);
 
 	int GetValue() const;
 	void PrintCard();
