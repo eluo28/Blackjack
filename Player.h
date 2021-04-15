@@ -7,10 +7,11 @@ class Player
 {
 
 public:
-	Player();
+	Player(std::string name = "Player");
 	bool isHitting() const;
-
+	virtual std::string getName();
 	Hand m_playerHand;
+	std::string m_name;
 
 };
 

@@ -1,9 +1,9 @@
-#include "Blackjack.h"
+#include "BlackjackController.h"
 
 
 int main() {
 
-	Blackjack blackjack;
+	BlackjackController blackjack;
 	std::string name;
 	char gameChoice;
 	bool again = true;

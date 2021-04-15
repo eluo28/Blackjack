@@ -2,8 +2,8 @@
 #include "Deck.h"
 #include <iostream>
 
-Player::Player() {
-
+Player::Player(std::string name) {
+    m_name = name;
 }
 
 bool Player::isHitting() const {
@@ -16,3 +16,6 @@ bool Player::isHitting() const {
     return (response == 'y' || response == 'Y');
 }
 
+std::string Player::getName() {
+    return m_name;
+}
