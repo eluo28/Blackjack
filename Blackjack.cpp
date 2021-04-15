@@ -44,6 +44,7 @@ void Blackjack::Play() {
 
 	while (playAgain) {
 		Round();
+
 		std::cout << "\nDo you want to play another round? (Y/N)\n\n";
 
 
@@ -133,6 +134,9 @@ void Blackjack::Round() {
 		std::cout << "It's a tie!\n";
 
 	}
+
+	house.m_playerHand.Clear();
+	player.m_playerHand.Clear();
 	
 }
 

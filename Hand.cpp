@@ -6,7 +6,7 @@ Hand::Hand() {
 }
 
 Hand::~Hand() {
-	Clear();
+	//Clear();
 
 }
 
@@ -17,12 +17,12 @@ void Hand::AddCard(Card* card) {
 
 void Hand::Clear()
 {
-	/*for (auto* c : m_hand) {
-		delete c;
-		c = nullptr;
-	}*/
-	// clear std::vector of pointers
-	//m_hand.clear();
+	std::vector<Card*>::iterator iter = m_hand.begin();
+	for (iter = m_hand.begin(); iter != m_hand.end(); ++iter)
+	{
+		delete* iter;
+	}
+	m_hand.clear();
 }
 
 void Hand::FlipFirstCard() {
